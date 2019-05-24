@@ -17,6 +17,7 @@ const getValue = (desired_cell) => {
 const getResult = (lineNumber) => {
     return {
         concurso: getValue(worksheet["A" + lineNumber]),
+        data: getValue(worksheet["B" + lineNumber]),
         numeros: [
             getValue(worksheet['C' + lineNumber]),
             getValue(worksheet['D' + lineNumber]),
